@@ -13,7 +13,7 @@ public:
 
     void selectionSort();
 
-    void insertionSort();
+    void insertionSort(T *arr, int n);
 
     void bubbleSort();
 
