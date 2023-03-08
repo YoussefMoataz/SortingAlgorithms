@@ -20,7 +20,8 @@ int main() {
 //    sortIntAlgorithms.insertionSort(array1, n);
 //    sortIntAlgorithms.selectionSort(array1, n);
 //    sortIntAlgorithms.bubbleSort(array1, n);
-    sortIntAlgorithms.shellSort(array1, n);
+//    sortIntAlgorithms.shellSort(array1, n);
+    sortIntAlgorithms.mergeSort(array1, 0, n - 1);
 
     printIntArray(array1, n);
 

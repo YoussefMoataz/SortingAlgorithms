@@ -93,3 +93,78 @@ void SortAlgorithms<T>::shellSort(T *arr, int n) {
     }
 
 }
+
+template<typename T>
+void SortAlgorithms<T>::mergeSort(T *arr, int l, int r) {
+
+    if (l >= r) {
+        return;
+    } else {
+
+        int middle = (l + r) / 2;
+
+        mergeSort(arr, l, middle);
+        mergeSort(arr, middle + 1, r);
+        merge(arr, l, middle, r);
+
+    }
+
+}
+
+template<typename T>
+void SortAlgorithms<T>::merge(T *arr, int l, int mid, int r) {
+
+    int lSubArrSize = mid - l + 1;
+    int rSubArrSize = r - mid;
+
+    int mainCounter = l;
+    int lCounter = 0;
+    int rCounter = 0;
+
+//    cout << lSubArrSize << " " << rSubArrSize << endl;
+
+    T leftArray[lSubArrSize];
+    T rightArray[rSubArrSize];
+
+    for (int i = 0; i < lSubArrSize; ++i) {
+
+        leftArray[i] = arr[l + i];
+
+    }
+
+    for (int j = 0; j < rSubArrSize; ++j) {
+
+        rightArray[j] = arr[mid + j + 1];
+
+    }
+
+    while (lCounter < lSubArrSize && rCounter < rSubArrSize) {
+
+        if (leftArray[lCounter] <= rightArray[rCounter]) {
+            arr[mainCounter] = leftArray[lCounter];
+            lCounter++;
+            mainCounter++;
+        } else {
+            arr[mainCounter] = rightArray[rCounter];
+            rCounter++;
+            mainCounter++;
+        }
+
+    }
+
+    while (lCounter < lSubArrSize) {
+        arr[mainCounter] = leftArray[lCounter];
+        lCounter++;
+        mainCounter++;
+    }
+
+    while (rCounter < rSubArrSize) {
+        arr[mainCounter] = rightArray[rCounter];
+        rCounter++;
+        mainCounter++;
+    }
+
+
+    cout << mainCounter << endl;
+
+}

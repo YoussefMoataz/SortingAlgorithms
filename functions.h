@@ -8,6 +8,9 @@ using namespace std;
 template<typename T>
 class SortAlgorithms {
 
+private:
+    void merge(T *arr, int l, int mid, int r);
+
 public:
     SortAlgorithms() = default;
 
@@ -19,7 +22,7 @@ public:
 
     void shellSort(T *arr, int n);
 
-    void mergeSort();
+    void mergeSort(T *arr, int l, int r);
 
     void quickSort();
 
