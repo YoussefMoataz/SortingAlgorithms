@@ -17,7 +17,8 @@ int main(){
 
     printIntArray(array1, n);
 
-    sortIntAlgorithms.insertionSort(array1, n);
+//    sortIntAlgorithms.insertionSort(array1, n);
+    sortIntAlgorithms.selectionSort(array1, n);
 
     printIntArray(array1, n);
 

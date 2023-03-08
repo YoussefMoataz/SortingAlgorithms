@@ -11,7 +11,7 @@ class SortAlgorithms {
 public:
     SortAlgorithms() = default;
 
-    void selectionSort();
+    void selectionSort(T *arr, int n);
 
     void insertionSort(T *arr, int n);
 
