@@ -15,7 +15,7 @@ public:
 
     void insertionSort(T *arr, int n);
 
-    void bubbleSort();
+    void bubbleSort(T *arr, int n);
 
     void mergeSort();
 
