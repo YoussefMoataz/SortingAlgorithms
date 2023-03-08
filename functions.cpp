@@ -165,3 +165,112 @@ void SortAlgorithms<T>::merge(T *arr, int l, int mid, int r) {
     }
 
 }
+
+template<typename T>
+void SortAlgorithms<T>::quickSort(T *arr, int l, int r) {
+
+    if (l >= r) {
+        return;
+    } else {
+
+        // middle as pivot
+        int middle = partition(arr, l, r);
+        quickSort(arr, l, middle - 1);
+        quickSort(arr, middle + 1, r);
+
+    }
+
+}
+
+template<typename T>
+int SortAlgorithms<T>::partition(T *arr, int l, int r) {
+
+    T item = arr[l];
+
+    int i = l;
+
+    for (int j = l + 1; j <= r; ++j) {
+
+        if (arr[j] < item) {
+            i++;
+            swap(arr[i], arr[j]);
+        }
+
+    }
+    swap(arr[i], arr[l]);
+
+    return i;
+
+}
+
+template<typename T>
+void SortAlgorithms<T>::countingSort(T *arr, int n){
+
+    T max = arr[0];
+
+    for (int m = 0; m < n; ++m) {
+        if (arr[m] > max){
+            max = arr[m];
+        }
+    }
+
+    for (int k = 0; k < n; ++k) {
+
+        cout << arr[k] << " ";
+
+    }cout << endl;
+
+    T count [max];
+    T sorted [n];
+
+    for (int i = 1; i <= max; ++i) {
+        count[i] = 0;
+    }
+
+    for (int k = 1; k < n; ++k) {
+
+        cout << count[k] << " ";
+
+    }cout << endl;
+
+    for (int j = 0; j < n; ++j) {
+        count[arr[j]] += 1;
+    }
+
+    for (int k = 1; k < n; ++k) {
+
+        cout << count[k] << " ";
+
+    }cout << endl;
+
+    for (int k = 2; k <= max; ++k) {
+
+        count[k] += count[k-1];
+
+    }
+
+    for (int k = 1; k < n; ++k) {
+
+        cout << count[k] << " ";
+
+    }cout << endl;
+
+
+    for (int i = n-1; i >= 0; --i) {
+        sorted[count[arr[i]] - 1] = arr[i];
+        count[arr[i]] -= 1;
+    }
+
+    for (int k = 1 ;k <= max; ++k) {
+
+        cout << count[k] << " ";
+
+    }cout << endl;
+
+    for (int k = 0; k < n; ++k) {
+
+        cout << sorted[k] << " ";
+
+    }cout << endl;
+
+}

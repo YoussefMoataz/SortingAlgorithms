@@ -11,6 +11,8 @@ class SortAlgorithms {
 private:
     void merge(T *arr, int l, int mid, int r);
 
+    int partition(T *arr, int l, int r);
+
 public:
     SortAlgorithms() = default;
 
@@ -24,9 +26,9 @@ public:
 
     void mergeSort(T *arr, int l, int r);
 
-    void quickSort();
+    void quickSort(T *arr, int l, int r);
 
-    void countingSort();
+    void countingSort(T *arr, int n);
 
     void radixSort();
 
