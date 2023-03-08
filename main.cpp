@@ -1,17 +1,17 @@
 #include "functions.cpp"
 
-void printIntArray(int arr[], int n){
+void printIntArray(int arr[], int n) {
     for (int i = 0; i < n; ++i) {
         cout << arr[i] << " - ";
     }
     cout << endl;
 }
 
-int main(){
+int main() {
 
     SortAlgorithms<int> sortIntAlgorithms;
 
-    int array1 [10]= {5, 1, 7, 9, 2, 6, 3, 0, 8, 4};
+    int array1[10] = {5, 1, 7, 9, 2, 6, 3, 0, 8, 4};
 
     int n = 10;
 
@@ -19,7 +19,8 @@ int main(){
 
 //    sortIntAlgorithms.insertionSort(array1, n);
 //    sortIntAlgorithms.selectionSort(array1, n);
-    sortIntAlgorithms.bubbleSort(array1, n);
+//    sortIntAlgorithms.bubbleSort(array1, n);
+    sortIntAlgorithms.shellSort(array1, n);
 
     printIntArray(array1, n);
 

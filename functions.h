@@ -11,15 +11,15 @@ class SortAlgorithms {
 public:
     SortAlgorithms() = default;
 
-    void selectionSort(T *arr, int n);
-
     void insertionSort(T *arr, int n);
+
+    void selectionSort(T *arr, int n);
 
     void bubbleSort(T *arr, int n);
 
-    void mergeSort();
+    void shellSort(T *arr, int n);
 
-    void shellSort();
+    void mergeSort();
 
     void quickSort();
 

@@ -53,9 +53,40 @@ void SortAlgorithms<T>::bubbleSort(T *arr, int n) {
         for (int j = n - 1; j > i; --j) {
 
             // swap each element with its previous element if the previous is smaller
-            if (arr[j] < arr[j-1]){
-                swap(arr[j], arr[j-1]);
+            if (arr[j] < arr[j - 1]) {
+                swap(arr[j], arr[j - 1]);
             }
+
+        }
+
+    }
+
+}
+
+template<typename T>
+void SortAlgorithms<T>::shellSort(T *arr, int n) {
+
+    // split the data to half each time (shell)
+    for (int shell = n / 2; shell > 0; shell /= 2) {
+
+        // loop from each shell till the end
+        for (int i = shell; i < n; ++i) {
+
+            int temp = arr[i];
+
+            int j = i;
+            for (; j >= shell; j -= shell) {
+
+                // sort each shell
+                if (temp < arr[j - shell]) {
+                    arr[j] = arr[j - shell];
+                } else {
+                    break;
+                }
+
+            }
+            // place the temp value
+            arr[j] = temp;
 
         }
 
