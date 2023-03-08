@@ -204,73 +204,46 @@ int SortAlgorithms<T>::partition(T *arr, int l, int r) {
 }
 
 template<typename T>
-void SortAlgorithms<T>::countingSort(T *arr, int n){
+void SortAlgorithms<T>::countingSort(T *arr, int n) {
 
     T max = arr[0];
 
+    // find the maximum value
     for (int m = 0; m < n; ++m) {
-        if (arr[m] > max){
+        if (arr[m] > max) {
             max = arr[m];
         }
     }
 
-    for (int k = 0; k < n; ++k) {
+    cout << "";
 
-        cout << arr[k] << " ";
+    T count[max];
 
-    }cout << endl;
-
-    T count [max];
-    T sorted [n];
-
+    // set count to zeroes
     for (int i = 1; i <= max; ++i) {
         count[i] = 0;
     }
 
-    for (int k = 1; k < n; ++k) {
-
-        cout << count[k] << " ";
-
-    }cout << endl;
-
+    // count the values
     for (int j = 0; j < n; ++j) {
         count[arr[j]] += 1;
     }
 
-    for (int k = 1; k < n; ++k) {
-
-        cout << count[k] << " ";
-
-    }cout << endl;
-
+    // apply cumulative sum
     for (int k = 2; k <= max; ++k) {
-
-        count[k] += count[k-1];
-
+        count[k] += count[k - 1];
     }
 
-    for (int k = 1; k < n; ++k) {
-
-        cout << count[k] << " ";
-
-    }cout << endl;
-
-
-    for (int i = n-1; i >= 0; --i) {
+    T sorted[n];
+    // place every element in its sorted position
+    for (int i = n - 1; i >= 0; --i) {
         sorted[count[arr[i]] - 1] = arr[i];
         count[arr[i]] -= 1;
     }
 
-    for (int k = 1 ;k <= max; ++k) {
-
-        cout << count[k] << " ";
-
-    }cout << endl;
-
-    for (int k = 0; k < n; ++k) {
-
-        cout << sorted[k] << " ";
-
-    }cout << endl;
+    // return elements to the main array
+    for (int i = 0; i < n; ++i) {
+        arr[i] = sorted[i];
+    }
 
 }

@@ -29,7 +29,7 @@ int main() {
     sortIntAlgorithms.countingSort(array2, n2);
 
 //    printIntArray(array1, n1);
-//    printIntArray(array2, n2);
+    printIntArray(array2, n2);
 
 
     return 0;
