@@ -164,7 +164,4 @@ void SortAlgorithms<T>::merge(T *arr, int l, int mid, int r) {
         mainCounter++;
     }
 
-
-    cout << mainCounter << endl;
-
 }
