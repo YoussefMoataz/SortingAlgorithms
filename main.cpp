@@ -1,9 +1,8 @@
-#include "functions.cpp"
+#include "functions.h"
 
 int main(){
 
     SortAlgorithms<int> sortIntAlgorithms;
-
 
 
     return 0;
