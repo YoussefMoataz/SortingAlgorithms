@@ -7,10 +7,18 @@ void SortAlgorithms<T>::insertionSort(T *arr, int n){
 
         T temp = arr[i];
 
-        for (j = i; j > 0 && temp < arr[j-1]; j--) {
-            arr[j] = arr[j-1];
+        for (j = i; j > 0; j--) {
+
+            // shift all elements greater than temp after temp
+            if(temp < arr[j-1]) {
+                arr[j] = arr[j - 1];
+            } else{
+                break;
+            }
+
         }
 
+        // place the temp to its sorted position
         arr[j] = temp;
 
     }
