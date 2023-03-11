@@ -1,4 +1,4 @@
-# Install script for directory: E:/Gam3a/Year 2/Second semester/Data Structure/SortingAlgorithms
+# Install script for directory: E:/Gam3a/Year 2/Second semester/Data Structure/Projects/SortingAlgorithms
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/Gam3a/Year 2/Second semester/Data Structure/SortingAlgorithms/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/Gam3a/Year 2/Second semester/Data Structure/Projects/SortingAlgorithms/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
