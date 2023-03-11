@@ -26,10 +26,10 @@ int main() {
 //    sortIntAlgorithms.shellSort(array1, n1);
 //    sortIntAlgorithms.mergeSort(array1, 0, n1 - 1);
 //    sortIntAlgorithms.quickSort(array1, 0, n1 - 1);
-//    sortIntAlgorithms.countingSort(array2, n2);
+    sortIntAlgorithms.countingSort(array2, n2);
 
 //    printIntArray(array1, n1);
-//    printIntArray(array2, n2);
+    printIntArray(array2, n2);
 
 
     return 0;

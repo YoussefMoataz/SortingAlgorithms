@@ -215,9 +215,7 @@ void SortAlgorithms<T>::countingSort(T *arr, int n) {
         }
     }
 
-    cout << "";
-
-    T count[max];
+    T count[max + 1];
 
     // set count to zeroes
     for (int i = 1; i <= max; ++i) {
