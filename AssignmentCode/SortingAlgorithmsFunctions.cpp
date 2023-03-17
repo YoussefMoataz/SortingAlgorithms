@@ -8,27 +8,19 @@ using namespace std;
 namespace sortlib {
 
     template<typename T>
-    void insertionSort(T *arr, int n) {
-
-        for (int i = 1, j; i < n; ++i) {
-
-            T temp = arr[i];
-
-            for (j = i; j > 0; j--) {
-
-                // shift all elements greater than temp after temp
-                if (temp < arr[j - 1]) {
-                    arr[j] = arr[j - 1];
-                } else {
-                    break;
+    void insertionSort(T data[], int n) {
+        T temp;
+        for (int i = 1; i < n; i++) {
+            for (int j = i - 1; j >= 0; j--) {
+                if (data[i] < data[j]) {
+                    temp = data[i];
+                    data[i] = data[j];
+                    data[j] = temp;
+                    i--;
                 }
-
             }
-
-            // place the temp to its sorted position
-            arr[j] = temp;
-
         }
+
 
     }
 
@@ -102,75 +94,46 @@ namespace sortlib {
     }
 
     template<typename T>
-    void mergeSort(T *arr, int l, int r) {
-
-        if (l >= r) {
-            return;
-        } else {
-
-            int middle = (l + r) / 2;
-
-            mergeSort(arr, l, middle);
-            mergeSort(arr, middle + 1, r);
-            merge(arr, l, middle, r);
-
+    void mergeSort(T arr[], int L, int R) {
+        if (L < R) {
+            int m = L + (R - L) / 2;
+            mergeSort(arr, L, m);
+            mergeSort(arr, m + 1, R);
+            Merge(arr, L, R, m);
         }
-
     }
 
     template<typename T>
-    void merge(T *arr, int l, int mid, int r) {
-
-        int lSubArrSize = mid - l + 1;
-        int rSubArrSize = r - mid;
-
-        int mainCounter = l;
-        int lCounter = 0;
-        int rCounter = 0;
-
-//    cout << lSubArrSize << " " << rSubArrSize << endl;
-
-        T leftArray[lSubArrSize];
-        T rightArray[rSubArrSize];
-
-        for (int i = 0; i < lSubArrSize; ++i) {
-
-            leftArray[i] = arr[l + i];
-
+    void Merge(T arr[], int L, int R, int m) {
+        int n1 = m - L + 1, n2 = R - m;
+        int Larr[n1], Rarr[n2];
+        for (int i = 0; i < n1; i++) {
+            Larr[i] = arr[L + i];
         }
-
-        for (int j = 0; j < rSubArrSize; ++j) {
-
-            rightArray[j] = arr[mid + j + 1];
-
+        for (int i = 0; i < n2; i++) {
+            Rarr[i] = arr[m + i + 1];
         }
-
-        while (lCounter < lSubArrSize && rCounter < rSubArrSize) {
-
-            if (leftArray[lCounter] <= rightArray[rCounter]) {
-                arr[mainCounter] = leftArray[lCounter];
-                lCounter++;
-                mainCounter++;
+        int i = 0, j = 0, k = L;
+        while (i < n1 && j < n2) {
+            if (Larr[i] < Rarr[j]) {
+                arr[k] = Larr[i];
+                i++;
             } else {
-                arr[mainCounter] = rightArray[rCounter];
-                rCounter++;
-                mainCounter++;
+                arr[k] = Rarr[j];
+                j++;
             }
-
+            k++;
         }
-
-        while (lCounter < lSubArrSize) {
-            arr[mainCounter] = leftArray[lCounter];
-            lCounter++;
-            mainCounter++;
+        while (i < n1) {
+            arr[k] = Larr[i];
+            i++;
+            k++;
         }
-
-        while (rCounter < rSubArrSize) {
-            arr[mainCounter] = rightArray[rCounter];
-            rCounter++;
-            mainCounter++;
+        while (j < n2) {
+            arr[k] = Rarr[j];
+            j++;
+            k++;
         }
-
     }
 
     template<typename T>

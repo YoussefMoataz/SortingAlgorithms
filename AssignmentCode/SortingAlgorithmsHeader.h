@@ -8,7 +8,7 @@
 namespace sortlib {
 // Hassan
     template<typename T>
-    void insertionSort(T *arr, int n);
+    void insertionSort(T data[], int n);
 
 // Mohamed
     template<typename T>
@@ -24,11 +24,11 @@ namespace sortlib {
 
 // Hassan
     template<typename T>
-    void merge(T *arr, int l, int mid, int r);
+    void Merge(T arr[], int L, int R, int m);
 
 // Hassan
     template<typename T>
-    void mergeSort(T *arr, int l, int r);
+    void mergeSort(T arr[], int L, int R);
 
 // Mohamed
     template<typename T>
