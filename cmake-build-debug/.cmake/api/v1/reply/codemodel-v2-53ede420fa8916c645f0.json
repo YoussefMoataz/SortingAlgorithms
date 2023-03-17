@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "SortingAlgorithms",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -41,6 +43,13 @@
 					"id" : "SortingAlgorithms::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-SortingAlgorithms-Debug-8f2473a0d879c84f02af.json",
 					"name" : "SortingAlgorithms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SortingAlgorithmsAssignment::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SortingAlgorithmsAssignment-Debug-2020242f461c3b36616a.json",
+					"name" : "SortingAlgorithmsAssignment",
 					"projectIndex" : 0
 				}
 			]

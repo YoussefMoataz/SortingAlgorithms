@@ -9,4 +9,6 @@ add_executable(SortingAlgorithms
         functions.cpp
         functions.h
         main.cpp
-        tempCodeRunnerFile.h)
+        tempCodeRunnerFile.h )
+
+add_executable(SortingAlgorithmsAssignment AssignmentCode/SortingAlgorithmsFunctions.cpp AssignmentCode/SortingAlgorithmsMain.cpp AssignmentCode/SortingAlgorithmsHeader.h)
