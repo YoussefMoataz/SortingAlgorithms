@@ -6,17 +6,18 @@
 #define SORTINGALGORITHMS_SORTINGALGORITHMSHEADER_H
 
 namespace sortlib {
+
 // Hassan
     template<typename T>
     void insertionSort(T data[], int n);
 
 // Mohamed
     template<typename T>
-    void selectionSort(T *arr, int n);
+    void selectionSort(T arr[], int size);
 
 // Mohamed
     template<typename T>
-    void bubbleSort(T *arr, int n);
+    void bubbleSort(T arr, int size);
 
 // Youssef
     template<typename T>

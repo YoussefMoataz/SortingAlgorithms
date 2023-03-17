@@ -25,41 +25,28 @@ namespace sortlib {
     }
 
     template<typename T>
-    void selectionSort(T *arr, int n) {
-
-        for (int i = 0, j, smallest; i < n - 1; ++i) {
-
-            for (j = i + 1, smallest = i; j < n; j++) {
-
-                // find the smallest unsorted element
-                if (arr[j] < arr[smallest]) {
-                    smallest = j;
+    void selectionSort(T arr[], int size) {
+        int least_index;
+        for (int i = 0; i < size; i++) {
+            least_index = i;
+            for (int j = i; j < size; j++) {
+                if (arr[j] <= arr[least_index]) {
+                    least_index = j;
                 }
-
             }
-            // swap the current element with the smallest element
-            swap(arr[smallest], arr[i]);
-
+            swap(arr[i], arr[least_index]);
         }
-
     }
 
     template<typename T>
-    void bubbleSort(T *arr, int n) {
-
-        for (int i = 0; i < n - 1; ++i) {
-
-            for (int j = n - 1; j > i; --j) {
-
-                // swap each element with its previous element if the previous is smaller
-                if (arr[j] < arr[j - 1]) {
-                    swap(arr[j], arr[j - 1]);
+    void bubbleSort(T arr, int size) {
+        for (int i = size - 1; i >= 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j] >= arr[j + 1]) {
+                    swap(arr[j], arr[j + 1]);
                 }
-
             }
-
         }
-
     }
 
     template<typename T>
