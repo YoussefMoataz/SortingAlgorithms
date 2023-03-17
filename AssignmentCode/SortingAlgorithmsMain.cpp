@@ -22,7 +22,7 @@ int main() {
 //    printIntArray(array2, n2);
 
     // get start time
-    auto start = high_resolution_clock::now();
+    auto start = std::chrono::steady_clock::now();
 
 //    sortlib::insertionSort(array1, n1);
 //    sortlib::selectionSort(array1, n1);
@@ -33,7 +33,7 @@ int main() {
 //    sortlib::countingSort(array2, n2);
 
     // get end time
-    auto end = high_resolution_clock::now();
+    auto end = std::chrono::steady_clock::now();
 
     printIntArray(array1, n1);
 //    printIntArray(array2, n2);
