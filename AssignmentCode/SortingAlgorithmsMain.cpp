@@ -12,10 +12,12 @@ void printIntArray(int arr[], int n);
 
 int main() {
 
-    int array1[10] = {5, 1, 7, 9, 2, 6, 3, 0, 8, 4};
+//    int array1[10] = {5, 1, 7, 9, 2, 6, 3, 0, 8, 4};
+    int array1[6] = {5, 1, 7, 9, 2, 6};
     int array2[5] = {4, 1, 3, 4, 3};
 
-    int n1 = 10;
+//    int n1 = 10;
+    int n1 = 6;
     int n2 = 5;
 
     printIntArray(array1, n1);
@@ -38,7 +40,7 @@ int main() {
     printIntArray(array1, n1);
 //    printIntArray(array2, n2);
 
-    auto executionTime = duration_cast<nanoseconds>(end-start);
+    auto executionTime = duration_cast<nanoseconds>(end - start);
     cout << "Function execution time is : " << executionTime.count() << " nanoseconds";
 //    auto executionTime = duration_cast<microseconds>(end - start);
 //    cout << "Function execution time is : " << executionTime.count() << " microseconds";

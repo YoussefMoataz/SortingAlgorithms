@@ -3,8 +3,6 @@
 //
 #include "SortingAlgorithmsHeader.h"
 
-using namespace std;
-
 namespace sortlib {
 
     template<typename T>

@@ -5,6 +5,10 @@
 #ifndef SORTINGALGORITHMS_SORTINGALGORITHMSHEADER_H
 #define SORTINGALGORITHMS_SORTINGALGORITHMSHEADER_H
 
+#include <iostream>
+
+using namespace std;
+
 namespace sortlib {
 
 // Hassan
