@@ -38,10 +38,10 @@ int main() {
     printIntArray(array1, n1);
 //    printIntArray(array2, n2);
 
-//    auto executionTime = duration_cast<nanoseconds>(end-start);
-//    cout << "Function execution time is : " << executionTime.count() << " nanoseconds";
-    auto executionTime = duration_cast<microseconds>(end - start);
-    cout << "Function execution time is : " << executionTime.count() << " microseconds";
+    auto executionTime = duration_cast<nanoseconds>(end-start);
+    cout << "Function execution time is : " << executionTime.count() << " nanoseconds";
+//    auto executionTime = duration_cast<microseconds>(end - start);
+//    cout << "Function execution time is : " << executionTime.count() << " microseconds";
 
     return 0;
 }
