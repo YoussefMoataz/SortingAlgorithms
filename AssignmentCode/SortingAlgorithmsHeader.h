@@ -37,11 +37,11 @@ namespace sortlib {
 
 // Mohamed
     template<typename T>
-    int partition(T *arr, int l, int r);
+    int partition(T arr[], int l, int r);
 
 // Mohamed
     template<typename T>
-    void quickSort(T *arr, int l, int r);
+    void quickSort(T arr[], int l, int r);
 
 // Youssef
     template<typename T>

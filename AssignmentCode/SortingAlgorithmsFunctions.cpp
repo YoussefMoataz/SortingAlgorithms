@@ -122,40 +122,29 @@ namespace sortlib {
     }
 
     template<typename T>
-    void quickSort(T *arr, int l, int r) {
-
-        if (l >= r) {
+    void quickSort(T arr[], int l, int r) {
+        if (r <= l) {
             return;
-        } else {
-
-            // middle as pivot
-            int middle = partition(arr, l, r);
-            quickSort(arr, l, middle - 1);
-            quickSort(arr, middle + 1, r);
-
         }
+        int i = partition(arr, l, r);
 
+        quickSort(arr, l, i - 1);
+        quickSort(arr, i + 1, r);
     }
 
     template<typename T>
-    int partition(T *arr, int l, int r) {
-
-        T item = arr[l];
-
-        int i = l;
-
-        for (int j = l + 1; j <= r; ++j) {
-
-            if (arr[j] < item) {
-                i++;
-                swap(arr[i], arr[j]);
+    int partition(T arr[], int l, int r) {
+        int pivot = l, k = l;
+        for (int i = l + 1; i <= r; i++) {
+            if (arr[pivot] <= arr[i]) {
+                continue;
+            } else {
+                k++;
+                swap(arr[k], arr[i]);
             }
-
         }
-        swap(arr[i], arr[l]);
-
-        return i;
-
+        swap(arr[k], arr[pivot]);
+        return k;
     }
 
     template<typename T>

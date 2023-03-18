@@ -31,7 +31,7 @@ int main() {
 //    sortlib::bubbleSort(array1, n1);
 //    sortlib::shellSort(array1, n1);
 //    sortlib::mergeSort(array1, 0, n1 - 1);
-//    sortlib::quickSort(array1, 0, n1 - 1);
+    sortlib::quickSort(array1, 0, n1 - 1);
 //    sortlib::countingSort(array2, n2);
 
     // get end time
