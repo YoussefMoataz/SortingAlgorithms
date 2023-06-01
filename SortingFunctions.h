@@ -1,3 +1,8 @@
+/*
+ * By: Youssef Moataz
+ * Date: Jun 1, 2023
+ */
+
 #ifndef sorting_functions_h
 #define sorting_functions_h
 
@@ -5,6 +10,10 @@
 
 using namespace std;
 
+/**
+ * @author Youssef Moataz
+ * @tparam T The datatype.
+ */
 template<typename T>
 class SortAlgorithms {
 
