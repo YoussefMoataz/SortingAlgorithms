@@ -7,4 +7,4 @@ This project contains 7 sorting algorithms implemented in C++:
 * Shell Sort
 * Merge Sort
 * Quick Sort
-* Countinh Sort
+* Counting Sort
