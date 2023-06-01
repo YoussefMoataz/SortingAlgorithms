@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = E$:/Gam3a/Year$ 2/Second$ semester/Data$ Structure/Projects/SortingAlgorithms/cmake-build-debug/
+cmake_ninja_workdir = E$:/Gam3a/Year$ 2/Semester$ 2/Data$ Structures/Projects/SortingAlgorithms/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target SortingAlgorithms
 
@@ -49,17 +49,15 @@ cmake_ninja_workdir = E$:/Gam3a/Year$ 2/Second$ semester/Data$ Structure/Project
 
 build cmake_object_order_depends_target_SortingAlgorithms: phony || CMakeFiles/SortingAlgorithms.dir
 
-build CMakeFiles/SortingAlgorithms.dir/functions.cpp.obj: CXX_COMPILER__SortingAlgorithms_Debug E$:/Gam3a/Year$ 2/Second$ semester/Data$ Structure/Projects/SortingAlgorithms/functions.cpp || cmake_object_order_depends_target_SortingAlgorithms
-  DEP_FILE = CMakeFiles\SortingAlgorithms.dir\functions.cpp.obj.d
+build CMakeFiles/SortingAlgorithms.dir/SortingMain.cpp.obj: CXX_COMPILER__SortingAlgorithms_Debug E$:/Gam3a/Year$ 2/Semester$ 2/Data$ Structures/Projects/SortingAlgorithms/SortingMain.cpp || cmake_object_order_depends_target_SortingAlgorithms
+  DEP_FILE = CMakeFiles\SortingAlgorithms.dir\SortingMain.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++14
-  INCLUDES = -I"E:/Gam3a/Year 2/Second semester/Data Structure/Projects/SortingAlgorithms/."
   OBJECT_DIR = CMakeFiles\SortingAlgorithms.dir
   OBJECT_FILE_DIR = CMakeFiles\SortingAlgorithms.dir
 
-build CMakeFiles/SortingAlgorithms.dir/main.cpp.obj: CXX_COMPILER__SortingAlgorithms_Debug E$:/Gam3a/Year$ 2/Second$ semester/Data$ Structure/Projects/SortingAlgorithms/main.cpp || cmake_object_order_depends_target_SortingAlgorithms
-  DEP_FILE = CMakeFiles\SortingAlgorithms.dir\main.cpp.obj.d
+build CMakeFiles/SortingAlgorithms.dir/SortingFunctions.cpp.obj: CXX_COMPILER__SortingAlgorithms_Debug E$:/Gam3a/Year$ 2/Semester$ 2/Data$ Structures/Projects/SortingAlgorithms/SortingFunctions.cpp || cmake_object_order_depends_target_SortingAlgorithms
+  DEP_FILE = CMakeFiles\SortingAlgorithms.dir\SortingFunctions.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++14
-  INCLUDES = -I"E:/Gam3a/Year 2/Second semester/Data Structure/Projects/SortingAlgorithms/."
   OBJECT_DIR = CMakeFiles\SortingAlgorithms.dir
   OBJECT_FILE_DIR = CMakeFiles\SortingAlgorithms.dir
 
@@ -71,7 +69,7 @@ build CMakeFiles/SortingAlgorithms.dir/main.cpp.obj: CXX_COMPILER__SortingAlgori
 #############################################
 # Link the executable SortingAlgorithms.exe
 
-build SortingAlgorithms.exe: CXX_EXECUTABLE_LINKER__SortingAlgorithms_Debug CMakeFiles/SortingAlgorithms.dir/functions.cpp.obj CMakeFiles/SortingAlgorithms.dir/main.cpp.obj
+build SortingAlgorithms.exe: CXX_EXECUTABLE_LINKER__SortingAlgorithms_Debug CMakeFiles/SortingAlgorithms.dir/SortingMain.cpp.obj CMakeFiles/SortingAlgorithms.dir/SortingFunctions.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SortingAlgorithms.dir
@@ -81,53 +79,12 @@ build SortingAlgorithms.exe: CXX_EXECUTABLE_LINKER__SortingAlgorithms_Debug CMak
   TARGET_IMPLIB = libSortingAlgorithms.dll.a
   TARGET_PDB = SortingAlgorithms.exe.dbg
 
-# =============================================================================
-# Object build statements for EXECUTABLE target SortingAlgorithmsAssignment
-
-
-#############################################
-# Order-only phony target for SortingAlgorithmsAssignment
-
-build cmake_object_order_depends_target_SortingAlgorithmsAssignment: phony || CMakeFiles/SortingAlgorithmsAssignment.dir
-
-build CMakeFiles/SortingAlgorithmsAssignment.dir/AssignmentCode/SortingAlgorithmsFunctions.cpp.obj: CXX_COMPILER__SortingAlgorithmsAssignment_Debug E$:/Gam3a/Year$ 2/Second$ semester/Data$ Structure/Projects/SortingAlgorithms/AssignmentCode/SortingAlgorithmsFunctions.cpp || cmake_object_order_depends_target_SortingAlgorithmsAssignment
-  DEP_FILE = CMakeFiles\SortingAlgorithmsAssignment.dir\AssignmentCode\SortingAlgorithmsFunctions.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
-  INCLUDES = -I"E:/Gam3a/Year 2/Second semester/Data Structure/Projects/SortingAlgorithms/."
-  OBJECT_DIR = CMakeFiles\SortingAlgorithmsAssignment.dir
-  OBJECT_FILE_DIR = CMakeFiles\SortingAlgorithmsAssignment.dir\AssignmentCode
-
-build CMakeFiles/SortingAlgorithmsAssignment.dir/AssignmentCode/SortingAlgorithmsMain.cpp.obj: CXX_COMPILER__SortingAlgorithmsAssignment_Debug E$:/Gam3a/Year$ 2/Second$ semester/Data$ Structure/Projects/SortingAlgorithms/AssignmentCode/SortingAlgorithmsMain.cpp || cmake_object_order_depends_target_SortingAlgorithmsAssignment
-  DEP_FILE = CMakeFiles\SortingAlgorithmsAssignment.dir\AssignmentCode\SortingAlgorithmsMain.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
-  INCLUDES = -I"E:/Gam3a/Year 2/Second semester/Data Structure/Projects/SortingAlgorithms/."
-  OBJECT_DIR = CMakeFiles\SortingAlgorithmsAssignment.dir
-  OBJECT_FILE_DIR = CMakeFiles\SortingAlgorithmsAssignment.dir\AssignmentCode
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target SortingAlgorithmsAssignment
-
-
-#############################################
-# Link the executable SortingAlgorithmsAssignment.exe
-
-build SortingAlgorithmsAssignment.exe: CXX_EXECUTABLE_LINKER__SortingAlgorithmsAssignment_Debug CMakeFiles/SortingAlgorithmsAssignment.dir/AssignmentCode/SortingAlgorithmsFunctions.cpp.obj CMakeFiles/SortingAlgorithmsAssignment.dir/AssignmentCode/SortingAlgorithmsMain.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\SortingAlgorithmsAssignment.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = SortingAlgorithmsAssignment.exe
-  TARGET_IMPLIB = libSortingAlgorithmsAssignment.dll.a
-  TARGET_PDB = SortingAlgorithmsAssignment.exe.dbg
-
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\Gam3a\Year 2\Second semester\Data Structure\Projects\SortingAlgorithms\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "E:\Gam3a\Year 2\Semester 2\Data Structures\Projects\SortingAlgorithms\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -138,7 +95,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\Gam3a\Year 2\Second semester\Data Structure\Projects\SortingAlgorithms\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"E:\Gam3a\Year 2\Second semester\Data Structure\Projects\SortingAlgorithms" -B"E:\Gam3a\Year 2\Second semester\Data Structure\Projects\SortingAlgorithms\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "E:\Gam3a\Year 2\Semester 2\Data Structures\Projects\SortingAlgorithms\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"E:\Gam3a\Year 2\Semester 2\Data Structures\Projects\SortingAlgorithms" -B"E:\Gam3a\Year 2\Semester 2\Data Structures\Projects\SortingAlgorithms\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -150,17 +107,15 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build SortingAlgorithms: phony SortingAlgorithms.exe
 
-build SortingAlgorithmsAssignment: phony SortingAlgorithmsAssignment.exe
-
 # =============================================================================
 # Folder targets.
 
 # =============================================================================
 
 #############################################
-# Folder: E:/Gam3a/Year 2/Second semester/Data Structure/Projects/SortingAlgorithms/cmake-build-debug
+# Folder: E:/Gam3a/Year 2/Semester 2/Data Structures/Projects/SortingAlgorithms/cmake-build-debug
 
-build all: phony SortingAlgorithms.exe SortingAlgorithmsAssignment.exe
+build all: phony SortingAlgorithms.exe
 
 # =============================================================================
 # Built-in targets
@@ -169,14 +124,14 @@ build all: phony SortingAlgorithms.exe SortingAlgorithmsAssignment.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake E$:/Gam3a/Year$ 2/Second$ semester/Data$ Structure/Projects/SortingAlgorithms/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake E$:/Gam3a/Year$ 2/Semester$ 2/Data$ Structures/Projects/SortingAlgorithms/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake E$:/Gam3a/Year$ 2/Second$ semester/Data$ Structure/Projects/SortingAlgorithms/CMakeLists.txt: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake E$:/Gam3a/Year$ 2/Semester$ 2/Data$ Structures/Projects/SortingAlgorithms/CMakeLists.txt: phony
 
 
 #############################################

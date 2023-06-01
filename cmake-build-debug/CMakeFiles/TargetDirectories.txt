@@ -1,4 +1,3 @@
-E:/Gam3a/Year 2/Second semester/Data Structure/Projects/SortingAlgorithms/cmake-build-debug/CMakeFiles/SortingAlgorithms.dir
-E:/Gam3a/Year 2/Second semester/Data Structure/Projects/SortingAlgorithms/cmake-build-debug/CMakeFiles/SortingAlgorithmsAssignment.dir
-E:/Gam3a/Year 2/Second semester/Data Structure/Projects/SortingAlgorithms/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/Gam3a/Year 2/Second semester/Data Structure/Projects/SortingAlgorithms/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/Gam3a/Year 2/Semester 2/Data Structures/Projects/SortingAlgorithms/cmake-build-debug/CMakeFiles/SortingAlgorithms.dir
+E:/Gam3a/Year 2/Semester 2/Data Structures/Projects/SortingAlgorithms/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Gam3a/Year 2/Semester 2/Data Structures/Projects/SortingAlgorithms/cmake-build-debug/CMakeFiles/rebuild_cache.dir
