@@ -3,7 +3,8 @@
  * Date: Jun 1, 2023
  */
 
-#include "SortingFunctions.cpp"
+//#include "SortingFunctions.cpp"
+#include "SortingAlgorithms.cpp"
 
 template <typename ArrayType>
 void printArray(ArrayType arr[], int n, const char *title);
